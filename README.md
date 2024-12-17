@@ -1,2 +1,2 @@
 # gaem
-my first game using Godot!
+my first game using Godot 😀!

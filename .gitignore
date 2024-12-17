@@ -1,0 +1,18 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot-specific files
+.export/
+.import/
+*.godot-export
+
+# Compiled scripts
+*.mono
+*.dll
+*.pdb
+*.exe
+
+# OS-specific files
+.DS_Store
+Thumbs.db
