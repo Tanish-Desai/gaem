@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c4iuqxapp3qb6"]
+[gd_scene load_steps=14 format=3 uid="uid://c4iuqxapp3qb6"]
 
 [ext_resource type="PackedScene" uid="uid://srbn5ph8syex" path="res://scenes/player.tscn" id="1_g6ok2"]
 [ext_resource type="Texture2D" uid="uid://bk8hmgvt4smvc" path="res://assets/sprites/world_tileset.png" id="2_w5lk5"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dwkasuqlfcu6j" path="res://scenes/coin.tscn" id="4_lyd5a"]
 [ext_resource type="PackedScene" uid="uid://dynv3ve0jfq13" path="res://scenes/killzone.tscn" id="5_lvsx5"]
 [ext_resource type="PackedScene" uid="uid://bw51angtfuary" path="res://scenes/enemy.tscn" id="6_qyoxo"]
+[ext_resource type="FontFile" uid="uid://ck22cg7ellkbw" path="res://assets/fonts/PixelOperator8.ttf" id="7_er3c1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q8ve6"]
 texture = ExtResource("2_w5lk5")
@@ -310,6 +311,35 @@ autoplay = "move"
 z_index = 4
 position = Vector2(601, 20)
 
-[node name="enemy2" parent="." instance=ExtResource("6_qyoxo")]
+[node name="Label" type="Label" parent="."]
 z_index = 2
-position = Vector2(-129, -27)
+offset_left = -95.0
+offset_top = -15.0
+offset_right = -9.0
+offset_bottom = -5.0
+theme_override_colors/font_color = Color(0.0067767, 0.107079, 0.265955, 1)
+theme_override_fonts/font = ExtResource("7_er3c1")
+theme_override_font_sizes/font_size = 8
+text = "Space to jump"
+
+[node name="Label2" type="Label" parent="."]
+z_index = 2
+offset_left = 363.0
+offset_top = 29.0
+offset_right = 462.0
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0.460799, 0.642189, 0.984607, 1)
+theme_override_fonts/font = ExtResource("7_er3c1")
+theme_override_font_sizes/font_size = 8
+text = "Don't get hasty!"
+
+[node name="Label3" type="Label" parent="."]
+z_index = 2
+offset_left = 696.0
+offset_top = -143.0
+offset_right = 795.0
+offset_bottom = -134.0
+theme_override_colors/font_color = Color(0.448733, 0.774795, 0.993746, 1)
+theme_override_fonts/font = ExtResource("7_er3c1")
+theme_override_font_sizes/font_size = 8
+text = "Almost done..."
