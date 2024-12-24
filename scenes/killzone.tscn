@@ -7,7 +7,7 @@ collision_mask = 2
 script = ExtResource("1_sherv")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.533
+wait_time = 0.608
 one_shot = true
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
